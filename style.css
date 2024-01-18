@@ -9,12 +9,238 @@
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
+/* <!---------------------More About--------------> */
+/* Reset-CSS */
+
+::selection{
+    background-color: #000;
+    color: #129cff;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+.coner{
+    width: 500px;
+    height: 600px;
+    padding: 25px 30px;
+    height: 100vh;
+}
+.heading{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+}
+
+.horizontal-bars .bar{
+    margin: 40px 0;
+}
+.horizontal-bars .bar:first-child{
+    margin-top: 0;
+}
+.horizontal-bars .bar:last-child{
+    margin-bottom: 0;
+}
+.horizontal-bars .bar .info{
+    margin-bottom: 5px;
+}
+.horizontal-bars .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;   
+    opacity: 0;
+}
+
+.horizontal-bars .bar .progress-line{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #000;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+.horizontal-bars .bar .progress-line span{
+    height: 100%;
+    background-color: #129cff;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.progress-line.html span{
+    width: 90%;
+}
+.progress-line.css span{
+    width: 60%;
+}
+.progress-line.jquery span{
+    width: 85%;
+}
+.progress-line.python span{
+    width: 50%;
+}
+.progress-line.mysql span{
+    width: 75%;
+}
+
+.progress-line span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;   
+    opacity: 0;
+}
+.progress-line.html span::after{
+    content: "90%";
+}
+.progress-line.css span::after{
+    content: "60%";
+}
+.progress-line.jquery span::after{
+    content: "85%";
+}
+.progress-line.python span::after{
+    content: "50%";
+}
+.progress-line.mysql span::after{
+    content: "75%";
+}
+.progress-line span::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color:#000;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;   
+    opacity: 0;
+}
+@keyframes showText{
+    100%{
+        opacity: 1;
+    }
+}
+
+.radial-bars{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.radial-bars .radial-bar{
+    width: 50%;
+    height: 170px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.radial-bars .radial-bar svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+}
+.radial-bars .radial-bar .progress-bar{
+    stroke-width: 10;
+    stroke: black;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animate-bar 1s linear forwards;
+}
+@keyframes animate-bar {
+    100%{
+        stroke-dashoffset: -1;
+    }
+}
+.path{
+    stroke-width: 10;
+    stroke: #129cff;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+}
+.path-1{animation: animate-path1 1s 1s linear forwards;}
+.path-2{animation: animate-path2 1s 1s linear forwards;}
+.path-3{animation: animate-path3 1s 1s linear forwards;}
+.path-4{animation: animate-path4 1s 1s linear forwards;}
+
+
+@keyframes  animate-path1{
+    100%{
+    stroke-dashoffset: 50;
+    }
+}
+@keyframes  animate-path2{
+    100%{
+    stroke-dashoffset: 175;
+    }
+}
+@keyframes  animate-path3{
+    100%{
+    stroke-dashoffset: 125;
+    }
+}
+@keyframes  animate-path4{
+    100%{
+    stroke-dashoffset: 75;
+    }
+}
+
+.radial-bar .percentage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+
+}
+.radial-bar .text{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+/* ------------------------------------- */
 
 :root {
-    --bg-color: #2a2a2a;
-    --second-bg-color: #202020;
-    --text-color: #fff;
-    --second-color: #ccc;
+ 
+    --text-color:black;
+    --second-color:black;
     --main-color: #05b4ff;
     --big-font: 5rem;
     --h2-font: 3rem;
@@ -34,8 +260,8 @@ header {
     z-index: 1000;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background: transparent;
+    justify-content: space-between;
+    background:white;
     padding: 22px 15%;
     border-bottom: 1px solid transparent;
     transition: all .45s ease;
@@ -62,6 +288,7 @@ span {
     font-weight: 500;
     margin: 0 25px;
     transition: all .45s ease;
+    
 }
 
 .navlist a:hover {
@@ -89,7 +316,7 @@ section {
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: url(/img/background.jpg);
+    background-image: url();
     background-size: cover;
     background-position: center;
     display: flex;
@@ -171,6 +398,7 @@ section {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1.5rem;
+    height: 100vh;
 }
 
 .about-img img {
@@ -196,19 +424,22 @@ section {
 
 .about-text p {
     color: var(--second-color);
-    font-size: var(--p-font);
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
     line-height: 1.8;
     margin-bottom: 4rem;
+
 }
 
 .services {
     background: var(--second-bg-color);
+    height: 100vh;
+    
 
 }
 
 .main-text {
     text-align: center;
+    margin-top: 80px;
 }
 
 .main-text p {
@@ -227,7 +458,8 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     align-items: center;
     gap: 2.5rem;
-    margin-top: 5rem;
+     margin-top: 80px;
+   
 }
 
 .box {
@@ -260,6 +492,11 @@ section {
 .box:hover {
     transform: translateY(-8px);
     cursor: pointer;
+}
+.projects{
+    height: 100vh;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
 .portfolio-content {
@@ -298,6 +535,7 @@ section {
     align-items: center;
     padding: 0 40px;
     transition: height 0.5s;
+    color: black;
 }
 
 .layer h5 {
@@ -310,6 +548,7 @@ section {
     color: var(--second-color);
     font-size: 1rem;
     line-height: 1.8;
+    color: black;
 
 }
 
@@ -342,6 +581,9 @@ section {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2.5rem;
+    margin-top: 10px;
+    height: 100vh;
+    font-size: 20px;
 }
 
 .contact-text h4 {
@@ -435,11 +677,11 @@ form textarea {
     background: var(--main-color);
 }
 
-@media (max-width: 1480px) {
+@media (orientation: landscape) {
     header {
-        padding: 12px 2.5%;
-        transition: .1s;
+      flex-direction: row;
     }
+  }
 
     section {
         padding: 110px 3% 60px;
@@ -447,6 +689,11 @@ form textarea {
 
     .end {
         padding: 15px 3%;
+    }
+
+@media screen and(min-width:576px){
+    header{
+        align-items: center;
     }
 }
 @media (max-width: 1100px){
@@ -511,14 +758,7 @@ form textarea {
         top: 100%;
     }
 }
-.search{
-    height: 30px;
-    display: flex;
-    cursor: pointer;
-    background: white;
-    border-radius: 30px;
-    align-items: center;
-}
+
 .box:hover input{
     width: 400px;
 }

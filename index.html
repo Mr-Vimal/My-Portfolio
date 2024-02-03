@@ -1,296 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>My Portfolio Website</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vimal Thasan Responsive Portfolio Website Design</title>
 
-	<link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-	<!------Header Section------>
-	<header>
-		<a href="" class="logo">Develo<span>pe</span>r..</a>
-		<ul class="navlist">
-			<li><a href="#home" class="active">Home</a></li>
-			<li><a href="#about">About Me</a></li>
-			<li><a href="#services">Services</a></li>
-			<li><a href="#projects">Projects</a></li>
-			<li><a href="#contact">Contact</a></li>
-		</ul>
-		<div class="bx bx-menu" id="menu-icon"></div>
 
-	</header>
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Developer.</a>
 
-	<!---------Home Section--------------->
-	<section class="home" id="home">
-		<div class="home-text">
-			<div class="slide">
-				<span class="one">Hello</span>
-				<span class="two">I'm</span>
-			</div>
-			<h1>Vimal Thasan</h1>
-			<h3>Website <span>Designer.</span></h3>
-			<p>we Developer with 5+ years experience that keep customers <br> coming for about services make best effort.</p>
-			<div class="button">
-				<a href="123.pdf" class="btn" download>Download CV</a>
-			</div>
-			<div class="homeImg">
-				<img src="4.jpg" alt="">
-			</div>
-		</div>
-	</section>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-	<!---------about Section --------------->
-	<section class="about" id="about">
-		<div class="about-img">
-			<img src="4.jpg">
-		</div>
+        <div class="bx bx-moon" id="darkMode-icon"></div>
 
-		<div class="about-text">
-			<h2>About <span>Me</span></h2>
-			<h4>Website Designer!</h4>
-			<p>Check out 10 Best Design updates for the top web design & development 
-				companies for your needs by reviewing our list & development companies! 
-				Find the best web design. Web Design Consulting. Comprehensive Directory. 
-				Top Reviewed Design Firms. Types: Enterprise Design Firms, Startup Design 
-				Firms, Custom Design Firms, eCommerce Design Firms, and App Design Firms. 
-				Custom Web Solution. 24x7 Customer Support. Secure Payment Gateway. 
-				Get A Free Web Quote. 24/7 Chat Support. Services: Web Page Design, 
-				Landing Page Design, App development, Mobile Website Design.
-				</p>
-				<a href="#more-about" class="btn">More About</a>
-		</div>
-	</section>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
 
-<!------------------More About------------------>
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1>Vimal Thasan</h1>
+            <p>
+                I'm a web developer who loves to create beautiful and functional websites
+                for people who want to make a difference in the world.
+            </p>
+            <p>Currently I'm a student of The UKI Coding School, where I'm learning how to
+            create beautiful and functional websites using HTML, CSS, JavaScript, and NodeJS.</p>
 
-<section class="more-about" id="more-about">
-       <div class="coner">
-           
-
-        <h1 class="heading">My Skills</h1>
-           <div class="horizontal-bars">
-               <div class="bar">
-				<div class="info">
-					<span>HTML</span>
-				</div>
-                   <div class="progress-line html">
-                       <span></span>
-                   </div>
-               </div>
-               <div class="bar">
-                   <div class="info">
-                       <span>CSS</span>
-                   </div>
-                   <div class="progress-line css">
-                       <span></span>
-                   </div>
-               </div>
-               <div class="bar">
-                   <div class="info">
-                       <span>jQuery</span>
-                   </div>
-                   <div class="progress-line jquery">
-                       <span></span>
-                   </div>
-               </div>
-               <div class="bar">
-                   <div class="info">
-                       <span>Python</span>
-                   </div>
-                   <div class="progress-line python">
-                       <span></span>
-                   </div>
-               </div>
-               <div class="bar">
-                   <div class="info">
-                       <span>MySQL</span>
-                   </div>
-                   <div class="progress-line mysql">
-                       <span></span>
-                   </div>
-               </div>
-           </div>
-       </div>
-
-       <div class="coner">
-           <h1 class="heading">My Skills</h1>
-           <div class="radial-bars">
-
-            <div class="radial-bar">
-                   <svg x="0px" y="0px" viewBox="0 0 200 200">
-                       <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                       <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-                   </svg>
-                   <div class="percentage">90%</div>
-                   <div class="text">Creativity</div>
-               </div>
-
-               <div class="radial-bar">
-                <svg x="0px" y="0px" viewBox="0 0 200 200">
-                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                    <circle class="path path-2" cx="100" cy="100" r="80"></circle>
-                </svg>
-                <div class="percentage">65%</div>
-                <div class="text">Communication</div>
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
             </div>
 
-            <div class="radial-bar">
-            <svg x="0px" y="0px" viewBox="0 0 200 200">
-                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                <circle class="path path-3" cx="100" cy="100" r="80"></circle>
-            </svg>
-            <div class="percentage">75%</div>
-            <div class="text">Problem Solving</div>
+            <a href="#" class="btn" download>Download CV</a>
         </div>
 
-        <div class="radial-bar">
-        <svg x="0px" y="0px" viewBox="0 0 200 200">
-            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-            <circle class="path path-4" cx="100" cy="100" r="80"></circle>
-        </svg>
-        <div class="percentage">85%</div>
-        <div class="text">Teamwork</div>
-    </div>
-    </div>
-</div>
-</section>
-	<!-----------Services Section-------------->
-	<section class="services" id="services">
-	<div class="main-text">
-		<h2><span>My</span>Services</h2>
-	</div>
-	<div class="services-content">
-		<div class="box">
-			<div class="s-icons">
-				<i class='bx bx-mobile-alt'></i>
-			</div>
-			<h3>Web Design</h3>
-			<p>One Way to categories the activities is in terms of the professional's area of experience such as competitive analysis, corporate stragety.</p>
-			<a href="#" class="btn">Read More</a>
-		</div>
+        <div class="profession-container">
+            <div class="profession-box">
+                <div class="profession" style="--i:0;">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Developer</h3>
+                </div>
+                <div class="profession" style="--i:1;">
+                    <i class='bx bxs-data'></i></i>
+                    <h3>Back-End Developer</h3>
+                </div>
+                <div class="profession" style="--i:2;">
+                    <i class='bx bx-palette'></i>
+                    <h3>Web Designer</h3>
+                </div>
+                <div class="profession" style="--i:3;">
+                    <i class='bx bxl-python' ></i></i>
+                    <h3>Software Developer</h3>
+                </div>
 
-		<div class="box">
-			<div class="s-icons">
-				<i class='bx bx-code-alt'></i>
-			</div>
-			<h3>Creative Design</h3>
-			<p>One Way to categories the activities is in terms of the professional's area of experience such as competitive analysis, corporate stragety.</p>
-			<a href="#" class="btn">Read More</a>
-		</div>
+                <div class="circle"></div>
+            </div>
 
-		<div class="box">
-			<div class="s-icons">
-				<i class='bx bx-edit-alt'></i>
-			</div>
-			<h3>Creative Design</h3>
-			<p>One Way to categories the activities is in terms of the professional's area of experience such as competitive analysis, corporate stragety.</p>
-			<a href="#" class="btn">Read More</a>
-		</div>
-	</div>
+            <div class="overlay"></div>
+        </div>
 
-</section>
+        <div class="home-img">
+            <img src="images/ho2.png" alt="">
+        </div>
+    </section>
 
-<!-----------Projects Section--------------->
-<section class="projects" id="projects">
-	<div class="main-text">
-		<h2><span>latest</span>Project</h2>
-	</div>
-	<div class="portfolio-content">
-		<div class="row">
-			<img src="img/project1.jpg" >
-			<div class="layer">
-				<h4>Coffee Website</h4>
-				<p>Check out 10 best Design's updates for the top web design & development compaines.</p>
-				<a href="Coffee/index.html"><i class='bx bx-link-external'></i></a>
-			</div>
-		</div>
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/ho2.png" alt="">
+        </div>
 
-		<div class="row">
-			<img src="img/project2.jpg" >
-			<div class="layer">
-				<h5>Visual Design</h5>
-				<p>Check out 10 best Design's updates for the top web design & development compaines.</p>
-				<a href="#"> <i class='bx bx-link-external'></i></a>
-			</div>
-		</div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>
+                Hi there, welcome to my website!,
+                a passionate web developer who enjoys learning new technologies
+                and solving problems with code!
+            </h3>
+            <p>
+                This website is my personal blog where I write about web development
+                topics that interest me and inspire me.
+            </p>
+            <p>
+                Thank you for visiting my website and getting to know me better. I hope you
+                enjoyed reading my blog posts and
+                found
+                them useful and informative. If you want to read more of my posts, subscribe
+                to my newsletter where I send
+                weekly
+                updates on web development trends and tips. If you have any feedback or
+                suggestions, please let me know. I'd love to hear from you.
+            </p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
 
-		<div class="row">
-			<img src="img/project3.jpg" >
-			<div class="layer">
-				<h5>Visual Design</h5>
-				<p>Check out 10 best Design's updates for the top web design & development compaines.</p>
-				<a href="#"> <i class='bx bx-link-external'></i></a>
-			</div>
-		</div>
+    <!-- services section design -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
 
-		<div class="row">
-			<img src="img/project4.jpg" >
-			<div class="layer">
-				<h5>Visual Design</h5>
-				<p>Check out 10 best Design's updates for the top web design & development compaines.</p>
-				<a href="#"> <i class='bx bx-link-external'></i></a>
-			</div>
-		</div>
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi itaque similique, architecto
+                    eaque ut quas delectus pariatur nesciunt in eligendi mollitia dicta.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bxs-paint'></i>
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi itaque similique, architecto
+                    eaque ut quas delectus pariatur nesciunt in eligendi mollitia dicta.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-bar-chart-alt'></i>
+                <h3>Digital Marketing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi itaque similique, architecto
+                    eaque ut quas delectus pariatur nesciunt in eligendi mollitia dicta.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
 
-		<div class="row">
-			<img src="img/project5.jpg" >
-			<div class="layer">
-				<h5>Visual Design</h5>
-				<p>Check out 10 best Design's updates for the top web design & development compaines.</p>
-				<a href="#"> <i class='bx bx-link-external'></i></a>
-			</div>
-		</div>
+    <!-- portfolio section design -->
+    <section class="projects" id="projects">
+        <h2 class="heading">Latest <span>Project</span></h2>
 
-		<div class="row">
-			<img src="img/project6.jpg" >
-			<div class="layer">
-				<h5>Visual Design</h5>
-				<p>Check out 10 best Design's updates for the top web design & development compaines.</p>
-				<a href="#"> <i class='bx bx-link-external'></i></a>
-			</div>
-		</div>
-	</div>
+        <div class="projects-container">
+            <div class="projects-box">
+                <img src="images/portfolio1.jpg" alt="">
 
-</section>
+                <div class="projects-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="projects-box">
+                <img src="images/portfolio2.jpg" alt="">
 
-<!------------------Contact section------------>
-<section class="contact" id="contact">
-	<div class="contact-text">
-		<h2>Contact <span>Me!</span></h2>
-		<h4>If you have any project in your mind.</h4>
-		<p>I'm a website Designer - creating bold & brave interface design for compaines all across the world.</p>
-		<div class="list">
-			<li><a href="#">0123456789</a></li>
-			<li><a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&ifkv=ASKXGp1laySvi_Pe1oB2qZkJpjcZUjHd4wdWDzoAoIh6MDihKCtlM3vvG5uoyVYlQxp2kJjcecwe_A&osid=1&passive=1209600&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1811538895%3A1705400109648317&theme=glif">mrvimal0501@gmail.com</a></li>
-		</div>
+                <div class="projects-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="projects-box">
+                <img src="images/portfolio3.jpg" alt="">
 
-		
+                <div class="projects-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="projects-box">
+                <img src="images/portfolio4.jpg" alt="">
 
-	</div>
-	<div class="contact-form">
-		<form action="">
-			<input type="text" placeholder="Your Name " required>
-			<input type="email" placeholder="Your Email " required>
-			<input type="number" placeholder="your Mobile Number" required>
-			<textarea name="" id="" cols="35" rows="10" placeholder="How Can I Help You " required></textarea>
-			<input type="submit" value="Send Message" class="submit" required>
-		</form>
-		<div class="contact-icons">
-			<a href="https://web.facebook.com/"><i class='bx bxl-facebook'></i></a>
-			<a href="https://twitter.com/"><i class='bx bxl-twitter' ></i></a>
-			<a href="https://www.instagram.com/"><i class='bx bxl-instagram-alt' ></i></a>
-			<a href="https://www.youtube.com/"><i class='bx bxl-youtube' ></i></a>
-			<a href="https://www.linkedin.com/"><i class='bx bxl-linkedin'></i></a>
-		</div>
-	</div>
-	<div class="top">
-		<a href="#home"><i class='bx bx-up-arrow-alt' >Home</i></a>
-	</div>
-</section>
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="projects-box">
+                <img src="images/portfolio5.jpg" alt="">
 
+                <div class="projects-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="projects-box">
+                <img src="images/portfolio6.jpg" alt="">
+
+                <div class="projects-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section design -->
+    <!-- <div class="foot" id="foot"> -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="https://formsubmit.co/mrvimal0501@gmail.com" method="POST">    
+        <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+        <!-- <div class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2023 | All Rights Reserved.</p>
+            </div>
+    
+            <div class="footer-iconTop">
+                <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+            </div>
+        </div> -->
+    <!-- </div> -->
+    
+   
+    <!-- footer design -->
+    <!-- <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer> -->
+
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
